@@ -1,0 +1,205 @@
+<!--Pagination-->
+<style>
+  .back{
+    background-color: rgb(218, 214, 214);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 3px;
+    margin-right: 10px;
+  }
+  .alt{
+    margin-right: 10px;
+  }
+  .next{
+    background-color: rgb(218, 214, 214);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 3px;
+  }
+  .stretch{
+    margin-top: 10px;
+    background-color: rgb(26, 130, 26);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: none;
+    cursor: pointer;
+    transition: padding-top 1s,
+      padding-bottom 1s,
+      padding-left 1s,
+      padding-right 1s;
+  }
+  .stretch:hover{
+    background-color: rgb(26, 130, 26);
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+  }
+  .shadow{
+    margin-top: 10px;
+    background-color: rgb(26, 130, 26);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: none;
+    cursor: pointer;
+    transition: 0.15s;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5)
+  }
+  .shadow:active{
+    background-color: rgb(26, 130, 26);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: none;
+    box-shadow: none;
+  }
+  .one{
+    background-color: rgb(26, 130, 26);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    transition: padding 0.15s,
+      margin 0.15s;
+    cursor: pointer;
+  }
+  .one:hover{
+    background-color: rgb(26, 130, 26);
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: none;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .two{
+    background-color: rgb(26, 130, 26);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    transition: padding 0.15s,
+      margin 0.15s;
+    cursor: pointer;
+  }
+  .two:hover{
+    background-color: rgb(26, 130, 26);
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: none;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .three{
+    background-color: rgb(26, 130, 26);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    transition: padding 0.15s,
+      margin 0.15s;
+    cursor: pointer;
+  }
+  .three:hover{
+    background-color: rgb(26, 130, 26);
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: none;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+</style>
+<button class="back">Back</button>
+<a class="alt" href="https://google.com">1</a>
+<a class="alt" href="https://google.com">2</a>
+<a class="alt" href="https://google.com">3</a>
+<a class="alt" href="https://google.com">4</a>
+<a class="alt" href="https://google.com">5</a>
+<button class="next">Next</button>
+
+<p></p>
+<!--Stretch-->
+<button class="stretch">Stretch</button>
+
+<!--3D click-->
+<p></p>
+<button class="shadow">Shadow</button>
+<p></p>
+<button class="one">one</button>
+<button class="two">two</button>
+<button class="three">three</button>
+<p></p>
+<style>
+  .stretch-button {
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    transition: padding 0.15s,
+      margin 0.15s;
+  }
+
+  .stretch-button:hover {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+</style>
+
+<button class="stretch-button">
+  One
+</button>
+<button class="stretch-button">
+  Two
+</button>
+<button class="stretch-button">
+  Three
+</button>
