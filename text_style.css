@@ -1,0 +1,179 @@
+.tahoma{
+  font-family: Tahoma;
+  font-size: 50px;
+  background-color: gray;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 2px;
+  text-align: center;
+  padding-bottom: 2px;
+  margin-bottom: 50px;
+}
+p{
+  font-family: verdana;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.course{
+  font-weight: bold;
+  margin-bottom: 4px;
+  font-size: 20px;
+}
+.level{
+  color: gray;
+  margin-bottom: 25px;
+}
+.description{
+  font-weight: bold;
+  opacity: 0.7;
+  margin-bottom: 12px;
+  width: 350px;
+}
+.get-started{
+  background-color: green;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+
+}
+.shopping{
+  font-family: Arial;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 50px;
+}
+.ending{
+  font-family: Arial;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(180, 44, 44);
+  margin-bottom: 50px;
+}
+.shopping2{
+  font-family: Arial;
+  font-size:40px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.help{
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+ .link{
+  font-family: Arial;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(95, 95, 223);
+  text-decoration:underline;
+  margin-bottom: 50px;
+}
+/*
+.new{
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  margin-bottom: 8px;
+
+}
+.item{
+  font-family: Arial;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.describe{
+  font-family: Arial;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.price{
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+.buy{
+  text-align: center;
+}
+*/
+.param{
+  margin-bottom: 5px;
+}
+.price2{
+  font-family: Arial;
+  font-size: 70px;
+
+}
+.currency{
+  font-family: Arial;
+  font-size: 30px;
+  margin-left: 20px;
+  color: rgb(67, 64, 64);
+  
+}
+.stat{
+  font-family: Arial;
+  font-size: 25px; 
+  color: rgb(48, 126, 48);
+  margin-bottom: 10px;
+
+}
+.param2{
+  font-family: Arial;
+  font-size: 25px;
+  opacity: 0.7;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.percent{
+  color: red;
+}
+.web{
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+.mail{
+  font-family: Arial;
+  font-size: 20px;
+  opacity: 0.6;
+  
+}
+.param3{
+  font-family: Arial;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  
+
+}
+.user{
+  color: rgb(88, 88, 191);
+  cursor: pointer;
+}
+.param4{
+  font-family: Arial;
+  font-size: 20px;
+}

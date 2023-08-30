@@ -1,0 +1,46 @@
+p{
+  text-align: center;
+  font-family: Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.new{
+  font-size: 15px;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.item{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.describe{
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.price{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  opacity: 0.6;
+
+}
+.buy{
+  background-color: rgb(79, 79, 195);
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+
+}
+
