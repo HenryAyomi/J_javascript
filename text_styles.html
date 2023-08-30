@@ -1,0 +1,117 @@
+<style>
+  /*we can try and cleanup our code
+  we can see there re duplicate of font-family
+  soinstead we can give all paragraph on the page same font-family like dis*/
+  p{
+    font-family: Arial;
+    /*so this apply to all the paragraph so we dont need the */
+    /*also the margin  also can be clean since it same throughout and also do remove the defaul */
+    margin-top: 0;
+    margin-bottom: 0;
+    /*note that we aslo get the margin-botton to 0 and the other class the margin-bottom is also set to other value but the other value is executed because of what we called css specificity i.e (the browser follow a certain priority) the other value matgin has higher priority than the margin-botton=0 
+    so the selector with more specific has hogher priority
+    in this case the p is the selector for the margin-bottom=0 but the other margin-bottom also has specific classes
+    
+    CLASS NAME SELECTOR(video_title) > ELEMENT NAME SELECTOR (p)In terms of priority */
+  }
+  .video_title{
+    /*to change the font we use font-family*/
+    /*font-family: Arial;*/
+    /*then we change the font size using font-size*/
+    font-size: 18px;
+    /*let make it bold*/
+    font-weight: bold;
+    /*italic*/
+    font-style: italic;
+    /*to csntre our text we use text-align
+    text-align: center;*/
+    /*to force outr text to the secod line we use width*/
+    width: 280px;
+    /*to adjust the spacings btw line use line-height*/
+    line-height: 24px;
+    /*removing the magin(spacing) defaukt of the paragraph and wrie our own*/
+    margin-bottom: 5px;
+  }
+  .video-stat{
+    /*font-family: Arial;*/
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    /*margin-top: 0;*/
+    margin-bottom: 20px;
+  }
+  .video-author{
+    /*font-family: Arial;*/
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    /*margin-top:0;*/
+    margin-bottom: 20px;
+  }
+  .video-description{
+    /*font-family: Arial;*/
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    /*the width so it can wrap around*/
+    width: 280px;
+    line-height: 22px;
+    margin-bottom: 100px;
+    /*margin-top: 0;*/
+  }
+  .apple-text{
+    margin-bottom: 50px;
+    font-size: 14px;
+    background-color:rgb(227, 65, 64);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    /*we add some padding(spacing inside our paragraph*/
+    padding-top:18px ;
+    padding-bottom: 18px;
+    /*using text decoration to achieve the underline*/
+    /*text-decoration: underline;*/
+    /*actuall it affect all the entire paragrpah but we only want it for onlythe text shop now
+    we must use what is called a text element ie at ext elemnt is an element that is inside a text*/
+  }
+  .span-example{
+    color: red;
+    margin-left: 12px;
+  }
+  .span-example:hover{
+    color: red;
+    text-decoration: underline;
+  }
+  .shop-link{
+    cursor: pointer;
+  }
+  .shop-link:hover{
+    text-decoration: underline;
+    
+  }
+</style>
+<p  class="video_title">
+  Talking Tech and AI with Google CEO Sundar Pichai!
+</p>
+<p class="video-stat">
+  3.4M views &#183; 6 months ago
+  <!--to create the dot in the middile we creste an html entity it make us to use special character u can use google to to for them eg middle dot is &#183;-->
+</p>
+<p class="video-author">
+  Marques Brownlee &#10003;
+  <!--the checkmark is also by html entity for checkmark
+  u can copy the actual checkmark but some browser may not support it so better use the entity-->
+</p>
+<p class="video-description">
+  Talking tech and AI on the heels of Google I/O. Also a daily driver phone reveal from Google's CEO. Shoutout to Sundar!
+</p>
+<p class="apple-text">
+  <!--try gratting ya , and . by html entity cuz ir can be confused for tag-->
+  Shop early for the best selection of holiday favourites. <span class="shop-link">Shop now &#62</span>;
+</p>
+
+
+<!--practicing the text element: text element ie at ext elemnt is an element that is inside a text
+  first we use the 1)strong text element
+the text element exist inside the text and modify some part of the text here now thestrong text element make the selected text bolder
+2)u element create text is the underline 
+3)span element :is the most genric we can give it a class then style ourself.IS THE MOST FLEXIXIBE WE CAN STYLE IT HOW EVER WE WANT-->
+<!--to acheive a spacing in html we use margin lefr or right-->
+<p>Shop early for the <strong>best selection</strong> of holiday <u>favourites</u>. <span class="span-example">Shop now </span>></p>
+
