@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Youtube/com</title>
+    <!--to style the img elemnt
+    so we give it a class attribute just like the all the css property apply some make sense some dont e.g font-text since it doesnt have text
+    one that amke sense is width 
+    Notice when we set the width it autoATICALLY CHABE BOTH THE WIDTH AND HEIGHT OF THE IMAGE so the image keep same shape so if u change the height the image can loose it shape
+     ONE OF the css propertis that re specific to image is one of which is called object fit
+     itdeterimne if another side doesnt match the images dimension or shape
+     if u set the objectfit to cover it tell the image to cover the 300 by 300 area but also keep it shape
+     the aread may not be big enougn to cover the whole image but we can adjust the object to which part we want to see using another property called object-position
+     we can set the object position to right or left but by defai=ult the object position is centre 
+     we can also give value contain to our obeject fit  this amek the entire object to strink to contain the 300 by 300 area 
+     when we set the border value we see the actual 300 by 300 area but contain make the make strink until it fit the area so it might not be able to conver the whole area since it not the right shape
+      WE can setthe postion t top or bottom-->
+  <style>
+    .thumbnail{
+      width: 300px;
+      /*height: 300px;
+      object-fit: contain;
+      object-position: center;
+      border-width: 2px;
+      border-style: solid;
+      border-color: red;
+      */
+
+    }
+    .search-bar{
+      font-size: 15px;
+      margin-left: 10px;
+
+    }
+    .cat-image{
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 100px;
+    }
+    .search2{
+      font-size: 15px;
+      padding-left: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-radius: 8px;
+      border:solid;
+      border-width: 0.5px;
+      border-color: gray;
+
+    }
+
+  </style>
+  </head>
+  <body>
+    <!--how to move file(image) into how html
+    go to the file if not save go to the console on the page and click the url of the image after locting it in the console then download make sure u download it inside the same folder u have your html code
+  Theb create an html elememt to load the image in the body
+the element is img is also a void element and it take one attribute called scr(source)which tell the computer which image to display on the website and the alt attributeu can omit
+this also use the file oath rule so if our image is in another folder we can use the folder/the file name to locate it
+so we created a folder called thumbnail and put the image in it then we can use the file path to locate it-->
+  <img class="thumbnail" src="thumbnail/thumbnail-1.webp">
+  <input class="search-bar" type="text" placeholder="Search">
+  <img class="cat-image" src="thumbnail/photo-1608848461950-0fe51dfc41cb.jpeg" alt="cat image">
+  <input class="search2" type="text" placeholder="Search"
+  </body>
+</html>
+<!--HOW TO CRAETE SEARCH BOX-->
+<!--THE HTML TO CREATE A TEXT BOX INPUT ELEMENT
+It a void elemnt the inpit elemnrt has several attribute one of them is type
+which can be equal to 1)text whxih will give us a text box
+another is 2)checkbox
+and if u notice some text box it has words in it whci will disappear one u start typing this wodrs re called placeholder
+to this we give attribute 3)placeholder then add the text u want to add
+For the text box all the css property we lerant rre also applicable just give it   a class then access it in the style elemnt
+so if u change the font size it will change
+also the amrgin also can be access-->
