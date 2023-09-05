@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The dic element</title>
+    <style>
+      .thumbnail{
+        width: 300px;
+        display: block;
+      }
+      .search-bar{
+        font-size: 15px;
+        margin-left: 10px;
+        display: block;
+      }
+      .video-title{
+        width: 290px;
+      }
+      .video_preview{
+        width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 15px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <!--THE DIV ELEMENT IS THE MOST USED HTML ELEMENT
+    the div stannd for division
+    the div is just a box
+    the div by default is block element
+    and can be changed to inline block elemnt
+     WHY IS DIV SO USEFUL?
+    THE key features of a div is that it can contain any other elements inside .we can put paragraph images as well as other div
+    Div re meant to be container
+    containers allow us to group elemrnt together so we can create a lay them well on the page so we use the div
+     let see the important of div by setting it to 300px
+     so if we check our webage and the paragrapy which is a block elemnt we will notice it only taking 300px space instead of the entire line
+      so we can see the blue box which indicate the amount of space consumed by the div(container) so we can add another container to the right 
+    so let convert the div to inline block element
+    Now our seach box is beisde the container cux they re noe inline block elemnr
+    so let change the seach bar to take up the entire line
+    no there is a problem no alignment in the two contauner so we need to set the alignment to the top(vertical-align :top)
+     so let add space i.e marging-->
+     <!--SO THE DIV IS A CONTAINER THAT GROUP EMENT TOGETHER SO WE CREATE COMPLEX LAYOUT-->
+    <input class="search-bar" type="text"             placeholder="Search">
+    <div class="video_preview">
+      <img class="thumbnail" src="thumbnail/thumbnail-1.webp" alt="image">
+      <p class="video-title">
+       Talking Tech and AI with Google CEO Sundar Pichai!
+      </p>
+      <p class="video_author">
+       Marques Brownlee
+      </p>
+      <p class="video_stat">
+       3.4M views · 6 months ago
+      </p>
+    </div>
+    <div class="video_preview">
+      <img class="thumbnail" src="thumbnail/thumbnail-2.webp" alt="image">
+      <p class="video-title">
+        Try Not To Laugh Challenge #9
+      </p>
+      <p class="video_author">
+        Markiplier
+      </p>
+      <p class="video_stat">
+        19M views &#183; 4 years ago
+      </p>
+    </div>
+  </body>
+</html>
+
