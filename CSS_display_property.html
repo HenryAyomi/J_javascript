@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> CSS DISPLAY PROPERTIES</title>
+    <style>
+      .video_author,.video_stat{
+        display: inline-block;
+      }
+      
+      /*if u have a css properties that re the same u can use a comma to add them togerthe like the above i.e both the video author and video stat re targeted for display property*/
+      /*
+      .video_author,
+      .video_stat{
+        display: block;
+      }
+      the above  is from inline to block*/
+    </style>
+  </head>
+  <body>
+    <p>
+      Talking Tech and AI with Google CEO Sundar Pichai!
+      </p>
+      <p class="video_author">
+      Marques Brownlee
+      </p>
+      <p class="video_stat">
+      3.4M views &#183: 6 months ago
+      </p>
+  </body>
+</html>
+<!--in html they re 3 types of elemnt 
+1)block elemnt :a block element take all the entire line, so a paragraph is a block element by default...the text extend to the end of the line
+no matter how small the text is by default it will take up the entire line
+2)inline-block element:this elemnt only takes up as much space as possible not the entire line e.g image and input element so another elment can appear beside them
+3)inline element: basically text element they appear btw a text e,g strong,span,u 
+WE CAN USE THE CSS PROPERTY CALLED DISPLAY TO SWITCH BTW BLOCK  AND INLINE BLOCK 
+-->
