@@ -1,0 +1,47 @@
+.profile_card{
+  font-family:arial;
+  width:380px;
+  height: 495px;
+  box-shadow: 0px 1px 6px rgba(0,0,0,0.23);
+  display: inline-block;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+.profile_pic{
+  width: 380px;
+  height:380px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  object-fit: cover;
+}
+.profile_name{
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+  margin-top: 2px;
+}
+.mutual_friend{
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 0px;
+  margin-bottom: 16px;
+
+}
+.add_button{
+  background-color: rgb(32, 32, 154);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
