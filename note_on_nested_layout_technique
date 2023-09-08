@@ -1,0 +1,22 @@
+Nested layout technique
+There re two types of layout
+1)Vertical layout:items re on top of each other
+2)horizontal layout:items re besides each
+SO by using a combination of vertical and horizontal layout WE CAN create almost anything we see on the website
+e.g we can use the youtube video preview
+we bresk downinto vertical layouts then inside thid layout we have two horizontal layout then side one of the horizontal layout we have some veetical layouts, so we have layput inside layout inside layout so it called the nested layout technque
+so using this we can break down anything we see on a professional websites into a series of layout the recreate them using our code
+
+SO how to practise the nested layout technique to break down a design
+let take a screenhot of one of the preview then use an image editing software to draw out the design
+so we use an image editing software like google drwaing
+so we upload our image to the google drawing
+then regoing to draw some rectangleto represnt our layout
+so go to shape craate a rectangle make use it transparent then the border  colorful
+then place it to create the top vertical layout then copy and paste the rectangle again to do the secode layout at the bottom
+so we've created the vertical layout
+so let create the horizontal layout 
+then we have vertcal layout inside the horizontal layout
+THE SCREENSHOTE OF THE DESIHN LAYOUT IS ON THE DOWNLOAD FOLDER OF THIS COMPUTER
+SO let learn how to recreate how design layout using code
+to create a vertical layout we two divs i.e the div on top of each other
