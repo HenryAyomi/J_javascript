@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--CSS GRID IS A much better way to create the horizontal layout
+the problem with inline block is that they re vertically aligh so we going to learn a new techque called css grid that is going to help to create perfectly align horizontal layout
+let craete a div then inside the divwe create two div
+we can write csscodein another way using the style attribute the style attribute let us wrute css code inside so let write the code background_color lightblue so this code is another way called INLINE STYLES I.e writing css inside a line of html
+in real webside we put our style in a seperate file cuz this inline style make our code uneasy to read
+SO A GRID IS A LAYOUT THAT HAS ROWS AND COLUMNS WE HAVE 2 BY 3 GRID i.e 2 rows and 3 columns we have 1 by 2 grid i.e 1 row and 2 columns
+now we style the outer div and set the display to grid
+then set our many columns the grid should have by usinh grid_template  columns sowe give it two value 100px 100px so the two values diefine howwide iur grid columns re so the firt column will have a width of 100px and the second will have a width of 100px
+so when we save we crate 1 by 2 grid
+Two characteristics of a grid
+1)notice that the div is not taking the entire line after saving but div re display block they suppose to take up the entire line but since it inside a grid it only take the entire column instead
+2)and now extra space btw div 1 and div2 online display inline block
+3) weh u add another element this amke the first div shorter but they re still verticaly align
+let add a third column by adding another value to the grid_template column 200px so we add div 3
+so when we add anothe div ww will see that the 4th div wrap around the secomd row so new row is created-->
+<html>
+  <head>
+    <title>Grid Practice</title>
+  </head>
+  <body style="padding-bottom: 1000px;">
+    <div style="
+      display: grid;
+      grid-template-columns: 100px 100px">
+      <div style="background-color: lightblue;">div 1</div>
+      <div style="background-color: lightpink;">div 2 <p>text</p></div>
+      
+    </div>
+    <!--so when we add anothe div ww will see that the 4th div wrap around the secomd row so new row is created-->
+    <div style="
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 100px 100px 200px;">
+      <div style="background-color: lightblue;">100px</div>
+      <div style="background-color: lightpink;">100px<p>text</p></div>
+      <div style="background-color: lightblue;">200px</div>
+      <div style="background-color:lightpink;">100px</div>
+    </div>
+
+
+
+    <!--fr is a special character in grid that stand for free space it means to take up the remaining amount of space on this grid-->
+    <div style="
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 100px 1fr;">
+      <div style="background-color: lightblue;">100px</div>
+      <div style="background-color: lightpink;">1fr</div>
+      <!--SO THE FR IS  WHAT WE NEED IN OUR YOUTIBE PROJECT SO THE so the first column(the channel pic) takes only about 50px so the second row(video title)take the entire container so as we enlarge the tab it alos enlarge so it the fr that make it like dat-->
+
+    </div>
+
+
+    <!--another fr property#
+    so whe u add another fr it will tell the column to take the remaining space according to the their value so as u enlarge the the tab it will enlaarge according so sinve it 1fr each it will take equal free space  so if we change the third column tio 2fr uw ills ee the ratio will be 2 to 1 in acquirin g the free space(the second column will hv 1/3 of the remaining space while the third column we have 2/3 of the remianing free space)
+  -->
+    <div style="
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 100px 1fr 2fr;">
+      <div style="background-color: lightblue;">100px</div>
+      <div style="background-color: lightpink;">1fr</div>
+      <div style="background-color: lightblue;">2fr</div>
+     
+      
+      
+    </div>
+
+    <!--O A 3 BY 1 GRID WE USE THE DISPLAY THEN WE SET THE GRID_TEMPLATE_COLUMN TO 1FR 1FR 1FR SINCE WE WANT IT TO TAJ THE ENTIRE FREE SSPACE EQUALLY 
+    let crate just like our project
+     let make the height  according to our video preview
+    let ADD SOME SPACES TO THE BOTTOM OF THE WEBSIDE  by styling the body elemnt using padding
+  
+     Remeber that in a grid when u have more element than column it will start wraping around to the second row
+      so we create the space btw the column and row using column_gap and row_gap-->
+    <div style="
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 40px;">
+      <div style="background-color: lightblue; height: 200px;">1fr</div>
+      <div style="background-color: lightpink; height: 200px;">1fr</div>
+      <div style="background-color: lightblue; height: 200px;">1fr</div>
+      <div style="background-color: lightpink; height: 200px;">1fr</div>
+      <div style="background-color: lightblue; height: 200px;">1fr</div>
+      <div style="background-color: lightpink; height: 200px;">1fr</div>
+     
+      
+      
+    </div>
+  </body>
+</html>
+
+
+<!--SO LET GO BACK TO OUR PROJECT(YOUTUBE) AND USE GRID TO CRTETAE THE HORIZONTALL LAYOUT INSTEAD OF INLINE BLOCK
+SO TO GRID A grid will target the container in which we have the channel pic and te video info
+so we seta class name video_info_grid
+then we target the class in our css 
+to create the grid we need tow steo
+1) we crate the display property to be grid
+20the number of column the grid has so we set grid _template_columns so we set acolumn of 50px for the channel pic and the second column to take up the remainih amount of space
+so u will see that the line btw the inline block is gone and the two re vertically align so we can remove all of the inline block style since we re not using them again
+
+TO A 3 BY 1 GRID WE USE THE DISPLAY THEN WE SET THE GRID_TEMPLATE_COLUMN TO 1FR 1FR 1FR SINCE WE WANT IT TO TAJ THE ENTIRE FREE SSPACE EQUALLY 
+let crate just like our project
+
+
+So we create multiple of the video preview then we use grid to create it
+
+THen we create a container using div to put on the video preview we called it video_grid
+ But then we notice that when we resize the web  the preview doesnt resize  this is bacuz we set a width for the video preview  and the thumbnail so we should just make it the size of the container they re by making the width 100% cuz if we eradicate the width the image will take the it actual size-->
