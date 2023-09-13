@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Flexbox Practice
+    </title>
+  </head>
+  <body style="padding-bottom: 1000px;">
+    <!--Flex box is another way to create layout
+    it is similar to css grid, it can create same kind of layout but it more flexible
+  so we gonna compare flexbox to grid to showtheir diffrences and similarty
+So we gonna create a div then inside we gonnn ahva etwo div just like the practice with grid
+  we gonna use the inline css again just like we did for grid
+   Just like grid flex box require a container which is going to be the flexbox and the element div 1 and 2 re going to place inside
+    so let turn out container into a flex box
+    The steps re:
+      1)set the display property to flex(display:flex) which create a flex box
+      2)then we set flex_direction to row(flex_direction:row)this mean we going to align the element in row i.e horizontally
+    
+      SO inside aflex box this div which re block elemnt dont behave like a block element they beahve more like inline block element they only take as much horizontal space as they need to but in grid we first set the column then the element went inside the column(so grid layout is more rigid) so if we add more text to the first div we noticed that it expand to take up as much space as it need to
+     SO the the flex box is a flexible box
+      SO ALOS IN FLEX BOX IF we make the second div taller by adding another paragraph the flex box will be Vertically Align
+       SO FLEX box is another to create hprizontal layout while maintaing alighment
+          SIMILARITY BTW FLEX BOX AND GRID
+          so wwe set the width of the container second flex box to 100px and the second container to take up the remainig space just like fr in grid so to do that we set flex:1  
+          so flex:1 causes the div to take up the remaning free space
+          flex:1 is equivalent to 1fr
+           so they have the same ratio form 
+            i.e flex:1 and flex:2 we share the remianing free space in ratio two to one.So flex2 is equivalent to 2fr in grid
+             DIFFERENCES BTW FLEX BOX N=AND GRID
+             FROM OUR PREVIOU EXAMPLE ON GRID THE LAYOUT IS MORE RIGID for grid so
+             so in our grid we firth define the column so then e=we place dthe element inside them so if we change the position of the element i,e conatiner 1 is now out in second position the co natiner will be inside the second column instead of the first since the position of container has being move to column 2 so therefore the layout is not changiing
+             so for flex box if we change the order of the elemnent that we take first div and placed it at the second position we notice that the first div taked all it property to the first placed it being placed so the firsth div keeo it width of flex 1  and the second keep it width of 100px
+             so the div in flex box take thier width along with the as they move unlike grid-->
+      <div style="
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;">
+        <div style="
+          background-color: lightblue;">div1 more space</div>
+        <div style="
+          background-color: lightpink;">div2 <p>taller div</p></div>
+
+      </div>
+      <div style="
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;">
+        <div style="
+          background-color: lightblue;
+          width: 100px;">
+          100px</div>
+        <div style="
+          background-color: lightpink;
+          flex: 1;">
+          flex1</div>
+      </div>
+
+    </div>
+    <div style="
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 50px;
+      margin-top: 50px;">
+     <div style="
+      background-color: lightblue;
+      width: 100px;">
+      100px</div> 
+      <div style="
+        background-color: lightpink;
+        flex: 1;">
+        flex1</div>
+        
+      <div style="
+        background-color: lightblue;
+        flex: 2;">
+        flex2</div>  
+    </div>
+<!--using the example below to learn our to create the header in the youtube project
+ let make the container look like our final project-->
+    <div style="
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 50px;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: gray;
+      justify-content: center;">
+     <div style="
+      background-color: lightblue;
+      width: 100px;">
+      100px</div> 
+      <div style="
+        background-color: lightpink;
+        width: 100px;">
+        100px</div>
+        
+      <div style="
+        background-color: lightblue;
+        width: 100px;">
+        100px</div> 
+        <!--by defauth the div re align to the left side so we can chnage how they align
+         sow euse a flex box property called "justify_content" so it determine how th element re layout horizontally
+         by defaukt justify_content is start which make them to alighn to the left so u can chage to end so they align to the right or centre  to put all the elmemnt in the centre-->
+    </div>
+
+
+    <div style="
+      display: flex;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: gray;
+      justify-content: space-between;">
+     <div style="
+      background-color: lightblue;
+      width: 100px;">
+      100px</div> 
+      <div style="
+        background-color: lightpink;
+        width: 100px;">
+        100px</div>
+        
+      <div style="
+        background-color: lightblue;
+        width: 100px;">
+        100px</div> 
+        <!-- is also justify_content:space_between so the element is spread evenly across the horzontal space with equal amount of space btw the element
+         this will help us evenly spread our icons evenly-->
+    </div>
+
+    <!--THe last exmample is how to align elemnt verticalyy
+     so we set another flex box property called align_item
+     so it determine how this element align vertically the defualt is stretched  so they streched to occupy the space and we can also change to start so it align at the begingig of of the conatiner (top) or end which pplaced them at the bottom or centre  vertically
+     so if chech our final project u wll see all the icons re vertically centred-->
+    <div style="
+      display: flex;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: gray;
+      margin-top: 50px;
+      justify-content: space-between;
+      align-items: center;">
+    <div style="
+      background-color: lightblue;
+      width: 100px;">
+      100px</div> 
+      <div style="
+        background-color: lightpink;
+        width: 100px;">
+        100px</div>
+        
+    <div style="
+        background-color: lightblue;
+        width: 100px;">
+        100px</div> 
+    </div>   
+  </body>
+</html>
+<!--Advantage of using flex box
+so in our youtube final project we will notice that in the header right section we hv 4 icons or images that we could create the horizontal layout using a grid  how ever when we log out of youtube u notice thatw e only have 3 icons so the layout actually chnages cuz we only hv 3 elements after logiing
+so this is going to be a situation to use flex box instead of grid cuz we want a flexible layout depending on our content-->
