@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Youtube.com</title>
+    <!--<link rel="stylesheet" href="youtube.css">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      .thumbnail{
+        width: 100%;
+        /*display: block;*/
+      }
+      
+      .video-title{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-bottom: 12px;
+      }
+      /*.video_preview{
+        width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 15px; since we gonna use the grid element to create the gap btw the the row and column 
+      }*/
+      .video_info_grid{
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        /*since we ve sset the grid we can remove the inline block element
+        the channel_pic and video_info is not more in use cuz theyre alredy a grid but for clarity on how i get there incase of next time */
+      }
+      .channel_pic{
+        /*display: inline-block;
+        width: 50px;
+        vertical-align: top;*/
+        background-color: white;
+      }
+      .video_info{
+        /*display: inline-block;
+        width: 200px;*/
+        background-color: white;
+      }
+      .profile_pic{
+        width: 40px;
+        border-radius: 50px;
+      }
+      .thumbnail_row{
+        margin-bottom: 12px;
+      }
+      .video_author,
+      .video_stat{
+        font-size: 12px;
+        color: rgb(96,96,96);
+      }
+      .video_author{
+        margin-bottom: 4px;
+      }
+      .video_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 40px;
+      }
+      body{
+        margin: 0;
+      }
+      .header{
+        height: 55px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .left_section{
+        background-color: lightblue;
+        width: 150px;
+      }
+      .middle_section{
+        background-color: lightpink;
+        flex: 1;
+        margin-left: 70px;
+        margin-left: 35px;
+        max-width: 500px;
+      }
+      .right_section{
+        background-color: lightblue;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Let create new header container
+      now let put our search bar inside the new header
+    the header from our final project has 3section the leftsection the middle(which has the search bar) and the right section 
+  so we gonna start from the right sectio cuz it gat more section within it
+ we put the sercah bar inside the middle section
+Now let style the overall container i.e the header to look like our final project 
+we create two style file to put our video styling and header styling and also the css styling for all paragraph we called the file general.css
+ THE STuff that is wont be carried out here but we have it in the real youtbe.html file
+ we notice from our final project there is spaces for some icon and by default the body eleemt has margin on every side we gats remove it and set it to set 0 wd do this in the genral file so we do by setting margin :0 so this turm alll amrgin to 0 in the body element
+Now let work on our header
+so let set height of 55px
+let position the 3sections
+we notice it on another line since div is an block element
+so we turn the header into flex box
+  now our we have the section horizontally placed
+   now let set a background color to the section
+  
+  SO FROM THE FINAL PROJECT  wenotice that the middle section is reducing while the web page is reducing while the right and left section is not
+ so this mean we can have a predefined with for the right and the left section but the middle section will be flex
+so the left section we gonna set a fixed width
+ so the middle section we what to strexh so it will be flex1
+   the right section should also be fixed 200px
+  
+    so now let side some spacing to the left and the right side of the middle section
+  
+   so from our final project we notice that as we enlarger the broswer the middle section keep going until it reaches a when it cant groe agin adn it placed centrally so let do it first we need to limit the width of the middle section using max-width so it means the with can be less than value but as to that value it will stop growing
+  
+  next we want to distribute this 3sections evenly across the horizontal space  using jusrtify content:space between
+  now we can see the section spread out in the container-->
+      <div class="header">
+        <div class="left_section">left section</div>
+        <div class="middle_section">
+          <input class="search-bar" type="text" placeholder="Search">
+        </div>
+        <div class="right_section">right_section</div>
+      </div>
+    <div class="video_grid">
+      <div class="video_preview">
+        <div class="thumbnail_row">
+          <img class="thumbnail" src="thumbnail/thumbnail-1.webp" alt="image">
+        </div>
+        <div class="video_info_grid">
+          <div class="channel_pic">
+            <img class="profile_pic" src="thumbnail/channel_pic/channel-1.jpeg" alt="image">
+          </div>
+          <div class="video_info">
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+             </p>
+             <p class="video_author">
+              Marques Brownlee
+             </p>
+             <p class="video_stat">
+              3.4M views &#183; 6 months ago
+             </p>
+          </div>
+        </div>
+      </div>
+      <div class="video_preview">
+        <div class="thumbnail_row">
+          <img class="thumbnail" src="thumbnail/thumbnail-2.webp" alt="image">
+        </div>
+        <div class="video_info_grid">
+          <div class="channel_pic">
+            <img class="profile_pic" src="thumbnail/channel_pic/channel-2.jpeg" alt="image">
+          </div>
+          <div class="video_info">
+            <p class="video-title">
+              Try Not To Laugh Challenge #9
+            </p>
+            <p class="video_author">
+              Markiplier
+            </p>
+            <p class="video_stat">
+              19M views &#183; 4 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video_preview">
+        <div class="thumbnail_row">
+          <img class="thumbnail" src="thumbnail/thumbnail-3.webp" alt="image">
+        </div>
+        <div class="video_info_grid">
+          <div class="channel_pic">
+            <img class="profile_pic" src="thumbnail/channel_pic/channel-4.jpeg" alt="image">
+          </div>
+          <div class="video_info">
+            <p class="video-title">
+              Crazy Tik Toks Taken Moments Before DISASTER
+             </p>
+             <p class="video_author">
+              SSSniperWolf
+             </p>
+             <p class="video_stat">
+              12M views &#183; 1 year ago
+             </p>
+          </div>
+        </div>
+      </div>
+      <div class="video_preview">
+        <div class="thumbnail_row">
+          <img class="thumbnail" src="thumbnail/thumbnail-4.webp" alt="image">
+        </div>
+        <div class="video_info_grid">
+          <div class="channel_pic">
+            <img class="profile_pic" src="thumbnail/channel_pic/channel-4.jpeg" alt="image">
+          </div>
+          <div class="video_info">
+            <p class="video-title">
+              The Simplest Math Problem No One Can Solve - Collatz Conjecture
+            </p>
+            <p class="video_author">
+              Veritasium
+            </p>
+            <p class="video_stat">
+              18M views &#183; 4 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="video_preview">
+        <div class="thumbnail_row">
+          <img class="thumbnail" src="thumbnail/thumbnail-5.webp" alt="image">
+        </div>
+        <div class="video_info_grid">
+          <div class="channel_pic">
+            <img class="profile_pic" src="thumbnail/channel_pic/channel-5.jpeg" alt="image">
+          </div>
+          <div class="video_info">
+            <p class="video-title">
+              Kadane's Algorithm to Maximum Sum Subarray Problem
+             </p>
+             <p class="video_author">
+              CS Dojo
+             </p>
+             <p class="video_stat">
+              519K views &#183; 5 years ago
+             </p>
+          </div>
+        </div>
+      </div>
+      <div class="video_preview">
+        <div class="thumbnail_row">
+          <img class="thumbnail" src="thumbnail/thumbnail-6.webp" alt="image">
+        </div>
+        <div class="video_info_grid">
+          <div class="channel_pic">
+            <img class="profile_pic" src="thumbnail/channel_pic/channel-6.jpeg" alt="image">
+          </div>
+          <div class="video_info">
+            <p class="video-title">
+              Anything You Can Fit In The Circle I&#39;ll Pay For
+            </p>
+            <p class="video_author">
+              MrBeast
+            </p>
+            <p class="video_stat">
+              141M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body> 
+</html>   
