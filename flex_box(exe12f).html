@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div{
+        font-family: Arial;
+      }
+      .container{
+        display: flex;
+        flex-direction: row;
+        background-color: blueviolet;
+        justify-content: space-between;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        align-items: center;
+      }
+      .home,
+      .download{
+        color:white;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .download{
+        border-style: solid;
+        border-color: white;
+        border-width: 1px;
+        padding-left: 10px;
+      padding-right: 10px;      }
+      .text{
+        padding-left: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 20px;
+        border: none;
+        width: 500px;
+      }
+      div {
+  font-family: Arial;
+}
+
+.header {
+  background-color: rgb(120, 82, 178);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.home-link {
+  font-weight: bold;
+}
+
+.text-box {
+  width: 500px;
+  border: none;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  height: 30px;
+  border-radius: 15px;
+  padding-left: 20px;
+}
+
+button {
+  background-color: rgb(120, 82, 178);
+  color: white;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 2px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="home-link">Home</div>
+      <input class="text-box" placeholder="Search">
+      <button>Download</button>
+    </div>
+    <div class="container">
+      <div class="home">Home</div>
+      <input class="text" type="text" placeholder="Search">
+      <div class="download">Download</div>
+    </div>   
+  </body>
+</html>
