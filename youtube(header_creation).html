@@ -72,20 +72,98 @@
         justify-content: space-between;
       }
       .left_section{
-        background-color: lightblue;
-        width: 150px;
+        /*background-color: lightblue;
+        width: 150px; so that the left section can contain the all the logo and icon within it*/
+        align-items: center;
+        display: flex;
+      
+      }
+      .hamburger_menu{
+        height: 24px;
+        margin-left: 24px;
+        margin-right: 20px;
+      }
+      .youtube_logo{
+        height: 20px;
       }
       .middle_section{
-        background-color: lightpink;
+        /*background-color: lightpink;*/
         flex: 1;
         margin-left: 70px;
         margin-left: 35px;
         max-width: 500px;
+        display: flex;
+        align-items: center;
+      }
+      .search-bar{
+        flex: 1;/*so it take up the rreminig space*/
+        height: 36px;
+        /*so we need to adjust the placeholder using a pseudo class so using .search-bar::placeholder*/
+        padding-left: 10px;
+        font-size: 16px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(192, 192, 192);
+        border-radius: 2px;
+        width: 0;/*shrink as much as possibe*/
+
+        box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);/* insert we put the shadow inthe inside of the seacrh bar not the outside */
+
+      }
+      .search-bar::placeholder{
+        font-family: Roboto,Arial;
+        font-size: 16px;
+      }
+
+      .search-button{
+        height: 40px;
+        width: 66px;
+        background-color: rgb(240,240,240);
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(192,192,192);
+        margin-left: -1px;/*this push it to the left so it has same edge as the search bar*/
+        margin-right: 8px;
+      }
+      .search-icon{
+        height: 25px;
+        margin-top: 4px;
+      }
+      .voice-search-button{
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        border: none;
+        background-color: rgb(245,245,245);
+      }
+      .voice-search-icon{
+        height: 24px;
+        margin-top: 4px;
       }
       .right_section{
-        background-color: lightblue;
-        width: 200px;
+        margin-right: 20px;
+        margin-left: 20px;
+        width: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-shrink: 0;/*mean dont shrink*/
       }
+      .upload-icon{
+        height: 24px;
+      }
+      .youtube-apps-icon{
+        height: 24px;
+
+      }
+      .notification-icon{
+        height: 24px;
+      }
+      .current-user-picture{
+        height: 32px;
+        border-radius: 16px;
+      }
+      
     </style>
   </head>
   <body>
@@ -118,12 +196,55 @@ so the left section we gonna set a fixed width
   
   next we want to distribute this 3sections evenly across the horizontal space  using jusrtify content:space between
   now we can see the section spread out in the container-->
+
+
+
+
+  <!--Note on nested flex books
+  in our left section we have the hambuger menu so we goona input it in our left section and also the youtube logo so we edit them from our final project we notice that the icons re vertically align so we use align-item:centre to achive it so we us eit in our left section but u will notice it didnt not reflect this is because the header is a flex  but the left section is just a regular div so we turn the left section to a flecx box using display:flex
+so therefore flex box only after it specified layout it doesntgo down in level of layer to affect the a layout  within 
+SO THIS SITUATION OF [UTTING A FLEX BOX INSIDE ANOTHER FLEX FLEX IS CALLED NESTED FLEXBOX
+ so let edit the youtube logo and menu very well to balance our final project
+
+Let move to the middle section
+we notice that when we size our final project the section button in resize so we goona achieve that here after inputting thevoice and serach icon remember we do this with flex 1
+so in our button section we goona recreate toe button one for the seach and the second for the voice icon
+ so we addd classesand target it so we can style them to align with our final project
+so the icon within the middle sectio also need alignment to the centre so we can make the middle section section flexbox also
+YOu will notice we dont had flex_direcion:row in iur css after display:flex this is beacuse by defualt flex box is flex-direction row so it lay out items horizontally . 
+so we need to adjust the placeholderIN THE SECARCH BAR  using a pseudo class so using .search-bar::placeholder
+
+LET resize the search icon inside the button
+
+SO need to move the input element inside the seach button into the input(seach) so we can have only one eadge to do thid we set our magine to negative value
+
+Let move to the righr section
+so we input the icons and user pic then style them the change the right swction into a flexbox and align-items:centre
+then we distrubute them evenly horizontally using justify-content:space-between.so we can adjust the spaces by decresing the width of the right section
+We will notice that the items within our right section shrink when we adjust our tab but in our finalproject it doesnt this si cuz we set our right section to be flexibe to overcome this we make the right section to flex-shrink:0 so this wont make the right section to shrink but only the middle sectio(search bar)
+also to make our serach box to shrink as much as possible we will set the width to 0 i.e as we make the tab smaller the serach box will grow smaller and smaller-->
       <div class="header">
-        <div class="left_section">left section</div>
+        <div class="left_section">
+          <img class="hamburger_menu" src="thumbnail/icons/hamburger-menu.svg" alt="icon">
+          <img class="youtube_logo" src="thumbnail/icons/youtube-logo.svg" alt="">
+        </div>
+
         <div class="middle_section">
           <input class="search-bar" type="text" placeholder="Search">
+          <button class="search-button">
+            <img class="search-icon" src="thumbnail/icons/search.svg" alt="search_icon">
+          </button>
+          <button class="voice-search-button">
+            <img class="voice-search-icon" src="thumbnail/icons/voice-search-icon.svg" alt="voice_icon">
+          </button>
+
         </div>
-        <div class="right_section">right_section</div>
+        <div class="right_section">
+          <img class="upload-icon" src="thumbnail/icons/upload.svg" alt="upload-image">
+          <img class="youtube-apps-icon" src="thumbnail/icons/youtube-apps.svg" alt="youtube-apps">
+          <img class="notification-icon" src="thumbnail/icons/notifications.svg" alt="icon-notification">
+          <img class="current-user-picture" src="thumbnail/channel_pic/my-channel.jpeg" alt="my-channel">
+        </div>
       </div>
     <div class="video_grid">
       <div class="video_preview">
