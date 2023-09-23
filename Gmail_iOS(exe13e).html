@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      iOS Gmail Design
+    </title>
+    <style>
+      .container{
+        border-color: rgb(200, 195, 195);
+        border-width: 0.5px;
+        border-style: solid;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+        width: 550px;
+      }
+      p{
+        margin-top: 0;
+        margin-bottom:0;
+        font-family: Arial;
+      }
+      .row1{
+        color: gray;
+        margin-top: 10px;
+        margin-bottom:20px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+      }
+      .row2{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+
+      }
+      .product-pic{
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .flexbox{
+       display: flex;
+       align-items: center; 
+       justify-content: space-between;
+       width: 450px;
+      }
+      .sender-name,
+      .inbox-title{
+        font-family: arial;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+      .time,
+      .inbox-body{
+        font-family: arial;
+        font-size: 20px;
+        color: gray;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="row1">ALL INBOXES</p>
+      <div class="row2">
+        <img class="product-pic" src="thumbnail/cat2.jpeg" alt="image">
+        <div class="column2">
+          <div class="flexbox">
+            <div class="sender-name">Chewy Promotions</div>
+            <div class="time">4:58 PM</div>
+          </div>
+          <p class="inbox-title">Biggest sales of the year!</p>
+          <p class="inbox-body">Hey there! We're writting to tell you about our...</p>
+  
+        </div>
+      </div>
+
+      <div class="row2">
+        <img class="product-pic" src="thumbnail/profiledog2.jpg" alt="image">
+        <div class="column2">
+          <div class="flexbox">
+            <div class="sender-name">Best Buy</div>
+            <div class="time">12:32 PM</div>
+          </div>
+          <p class="inbox-title">Your Best Buy eReceipt</p>
+          <p class="inbox-body">Thank you for shopping at Best Buy, here is...</p>
+  
+        </div>
+      </div>
+
+      <div class="row2">
+        <img class="product-pic" src="thumbnail/profilecat2.jpg" alt="image">
+        <div class="column2">
+          <div class="flexbox">
+            <div class="sender-name">Netflix</div>
+            <div class="time">10:32 AM</div>
+          </div>
+          <p class="inbox-title">Here's what's coming soon to Netflix</p>
+          <p class="inbox-body">Brand new movies and shows, old favorites...</p>
+  
+        </div>
+      </div>
+    </div>
+</body>
+</html>
