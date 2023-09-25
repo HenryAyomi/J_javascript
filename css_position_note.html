@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <!--Css position help us keep the header at the top of the page while we scroll down the wepsite it also us help us to keep the sidebar at the top of the page and lastly whenever we see a an element on top of another element that is using css postion for exmaple the video time on top of the thumbnail of our youtube project  the notification number on top of the icon and when u hover over the notification we hva tooltip on the page.CSS position add another dimention to our page
+  
+  we create a div inform of a container with width and height of 200px
+then we going to set the position property to static(note position static is the defualt it means is just ifwe dont put it atall) but we going to learn another element that allow us to stick an elemnent to the top while we scroll that is called position fixed.SO let create a nwe element at the top and call it header
+to know this we gat be able to scroll so let increse the height of the body (3000px)
+so next we gonna mmake the header stick to the top to do that  we use the position property and we gonna set a position of fixed so when u start scrolling u will notice the hrader element is sticking to the page whils scrolling
+Notice that when we set the position fixed it doesnt take the whole line any more and also it doesnt take the positon at the top of the page is sort of floating above the page now
+Now the position property has 4 special properties we can use to make the element around 
+1)top: here if we set the top to 0px this going to make the top  of our element 0px from the top of our browser window so we notice that the top of our elemetn(header) is right at the top of the  window(that is the distanve from the hr=eader and the browser is 0px) and if set to 10px the top our element is 10px from the top of our browser
+SO top means how far away our element is from the window
+the next property is  
+2)left: so if we set left to 0px so the left side of our elementwill be on the left edge of our window so if we set it to 50px then the left side is 50px away from the left of our window.So left tell us how much space is tbtw the elemnt and the left side of the window so we set thisin all 4 direction top left 3)right 4)bottom
+ so if we set it to opposite direction like left being 50px and right 50px this make the element to strech 
+this mean the element is 50px from the left of the page and 50px from the right of the page
+same thing with top and bottom.so if we make it 100px for bottom the elemtn will strch so that it will be 100px from the bottom
+Now let create the header of our youtube project
+SO we have to position of our youtube  header
+so for our header it at the top of the page and it also on the left and right edge so it means it 0px (u can just right 0)from the top and 0px from the left and the 0px from the right
+so the bottom we need to know it ,we must first try to calculate how far the bottom of this header element is from the bottom of the pagebut that is not going to work if we  resize the page so we a diffrent approah 
+now we have to figure out the height of this div so instead of using bottom we simply wanrt to use height
+so in addition to the positon property we can use height and width to resize the element
+so if you want the fiexed eleemnt to resize with page use bottomleft and bottom  and if u just want a specific height and widtha dnu dont want to resize the use height and width
+ so we goona set the heiht to 50px and dont want it to resize with page so it wont cuz we use height instead of bottom
+so when we start scrolling we see the header stick so
+that is how we create the youtube header wesee in our youtube project
+lastly we notice that the header is covering our firt div so we need to push the div down  so u might think the solution is adding margin to the top of our first div which can be(we add bit px with the alread height there like 60px)
+so this si not a good solution cuz if our content header changes e.g if we move the div1 to down below div 2 we notice it doesnt work anymore cuz all we wan ti sto always have space at the top of page regardless of what then content is    so let remoave the margin top and do the proper way
+so properly we need to add spacing to the body element
+so we can use either margin or padding so the best practice is to use padding
+ we gonna add spacing on the inside of our wep page i.e padding top:60px
+now we have the space and our header is not covering our content
+SO now let go to our project and put our header and sticki to the top of the page
+
+Now let learn how to create the sidebar and if u notice u will know the sidebar stick while we scroll
+below the header we create our side bar so we create a div sidebar then background green and color white and position fixed then we gonna put the side bar in a right place using top left right , bottom or width so if we look at our final project we notice the side bar is sticking to the bottom so bottom 0px then it stick to the left so left 0px but it not really sticking to the top cux it will block our heaader if does 
+so we start with left
+then the bottom
+then we want it to be at the top but not cover the header to 50px
+then we dont want the side bar to resize with the page so we use width instaed of right so we use width:72px
+
+then we have same problem again where our fixed eleemt is covering our content so wego to the body again and add padding-left cuz we want extra space on the left side
+so we set it to 80px which is more than the side bar of 72px.SO the side bar is not covering our contenet
+so -->
+  <head>
+    <title>Position Practice</title>
+  </head>
+  <body style="
+  height: 3000px;
+  padding-top: 60px;
+  padding-left: 80px;">
+    <div style="
+      background-color: black;
+      color: white;
+      position: fixed;
+      top: 0px;
+      height: 50px;
+      left: 0px;
+      right: 0px;
+      ">header</div>
+      <div style="
+      background-color: green;
+      color: white;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      top: 50px;
+      width: 72px;">sidebar</div>
+    <div style="
+      background-color: lightblue;
+      width: 200px;
+      height: 200px;">div1</div>
+    <div style="
+      background-color: lightpink;
+      width: 200px;
+      height: 200px;">div2</div>
+      
+      
+  </body>
+</html>
