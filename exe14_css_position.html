@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>overlaying with css position</title>
+    <style>
+      body{
+        height: 3000px;
+      }
+      div{
+        font-family: arial;
+        margin-bottom: 10px;
+      }
+      button{
+        cursor: pointer;
+      }
+      .sidebar{
+        background-color: green;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width:100px
+      }
+      .overlay{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.5);
+        display: flex;
+        align-items:center;
+        justify-content:center;
+      }
+      .model{
+        background-color: white;
+        width: 300px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border-radius: 10px;
+      }
+      .title{
+        font-size: 40px;
+        font-weight: bold;
+      }
+      .info{
+        font-size: 20px;
+        font-weight: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      right-sidebar
+    </div>
+    <div class="overlay">
+      <div class="model">
+        <div class="title">Modal Title</div>
+        <div class="info">This is model</div>
+        <button>Close</button>
+      </div>
+    </div>
+  </body>
+</html>
