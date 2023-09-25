@@ -7,6 +7,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
+      p{
+        font-family: Roboto,Arial;
+      }
+      body{
+        height: 3000px;
+        padding-top: 80px;
+        padding-left: 80px;
+      }
       .thumbnail{
         width: 100%;
         /*display: block;*/
@@ -17,6 +25,7 @@
         font-weight: 500;
         line-height: 20px;
         margin-bottom: 12px;
+        margin-top: 0px;
       }
       /*.video_preview{
         width: 300px;
@@ -62,14 +71,21 @@
         column-gap: 16px;
         row-gap: 40px;
       }
-      body{
-        margin: 0;
-      }
       .header{
         height: 55px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+        position:fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(242, 236, 236);
+
       }
       .left_section{
         /*background-color: lightblue;
@@ -163,6 +179,14 @@
         height: 32px;
         border-radius: 16px;
       }
+      .sidebar{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        top:55px;/*to whatever the height of our header is*/
+        background-color: white;/*we have our side bar*/
+        width: 72px;
+      }
       
     </style>
   </head>
@@ -222,13 +246,33 @@ Let move to the righr section
 so we input the icons and user pic then style them the change the right swction into a flexbox and align-items:centre
 then we distrubute them evenly horizontally using justify-content:space-between.so we can adjust the spaces by decresing the width of the right section
 We will notice that the items within our right section shrink when we adjust our tab but in our finalproject it doesnt this si cuz we set our right section to be flexibe to overcome this we make the right section to flex-shrink:0 so this wont make the right section to shrink but only the middle sectio(search bar)
-also to make our serach box to shrink as much as possible we will set the width to 0 i.e as we make the tab smaller the serach box will grow smaller and smaller-->
+also to make our serach box to shrink as much as possible we will set the width to 0 i.e as we make the tab smaller the serach box will grow smaller and smaller
+
+
+The note on position is in the file css_position_note.html
+SO we have to position of our youtube  header
+so for our header it at the top of the page and it also on the left and right edge so it means it 0px from the top and 0px from the left and the 0px from the right
+
+SO we go into the header css and set a postion fixed
+then since we want our header to stickto the top of the page we set it 0px,also 0px fro the left and 0px for the  right then we gonna set a height  since we alead have it
+so after that we notice we lost our background color,the only reason we had a background color was because  if we didnt have position fixed the header takes space on the page  and the page happens to be wide so the header appera to be width but no wthat is floating above the page  we notice that it is actually transparent so to add our background color we just ahve the set it .so lrt set ti to white now we re back to where we were
+so when we stat scrolling our header stink to the top
+so next we notice that the header is covering the  content  and the way to fix it is to ad padding to the top of our body we set padding-top:80px .Remember that the body style is in general.css file
+another thing is that we re missing the border at the the bottom acoording to our final project so let add that 
+but we want to add border to only one side not all 4 sides to do that we set same border property : border-width but in the middle we gonna tell it a direction we can say bottom i.e border-bottom-width or border-bottom-left-width any how we want it but in our case we want border at the bottom so we use border-bottom-width:1px(in our header-cs file oo) and the border-style solide but we only want it at the bottom so it will be border-bottom-style:solid and lastly border-bottom-color
+
+Now the side bar 
+let create the sidebar right beollow our header
+so we craete a div named sidebar and give it class sidebar
+so we crate a seperate css file for our side bar called sidebar.css
+we put position to fixed then we went it to stick to the left so left 0px then we want it to stick to the bottom then bottom is 0px then we want it top but not up to our header so we make the top to be the height of the header which is 55px then we change the background color to white 
+now let make our side bar aswide as our design
+so we set the width to 72px but our side bar is covering our content so we ad some padding more to the left  the body element-->
       <div class="header">
         <div class="left_section">
           <img class="hamburger_menu" src="thumbnail/icons/hamburger-menu.svg" alt="icon">
           <img class="youtube_logo" src="thumbnail/icons/youtube-logo.svg" alt="">
         </div>
-
         <div class="middle_section">
           <input class="search-bar" type="text" placeholder="Search">
           <button class="search-button">
@@ -246,6 +290,9 @@ also to make our serach box to shrink as much as possible we will set the width 
           <img class="current-user-picture" src="thumbnail/channel_pic/my-channel.jpeg" alt="my-channel">
         </div>
       </div>
+
+      <div class="sidebar">sidebar</div>
+
     <div class="video_grid">
       <div class="video_preview">
         <div class="thumbnail_row">
