@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Discord Sidebar</title>
+    <style>
+      body{
+        height: 3000px;
+      }
+      .first-sidebar{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 160px;
+        background-color: black;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+      }
+      img{
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
+        object-fit: cover;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      .second-sidebar{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 180px;
+        width: 300px;
+        background-color: rgb(36, 34, 34);
+        padding-left: 20px;
+        padding-right: 15px;
+      }
+      .sub-container{
+        display: flex;
+        align-items: centre;
+        justify-content: space-between;
+        padding-top: 20px;
+      }
+      div{
+        font-family: Arial;
+        font-size: 40px;
+        color: white;
+        font-weight: 700;
+      }
+      p{
+        color: rgb(103, 97, 97);
+        font-weight: 500;
+        margin-bottom: 60px;
+      }
+      span{
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first-sidebar">
+      <img src="thumbnail/cat2.jpeg" alt="profile-pic">
+      <img src="thumbnail/profiledog.jpg" alt="profile-pic">
+      <img src="thumbnail/profiledog2.jpg" alt="profile-pic">
+    </div>
+    <div class="second-sidebar">
+      <div class="sub-container">
+        <div>INFO</div>
+        <div>+</div>
+      </div>
+      <p># <span>new-videos</span></p>
+      <p># <span>updates</span></p>
+      <p># <span>faq</span></p>
+    </div>
+  </body>
+</html>
