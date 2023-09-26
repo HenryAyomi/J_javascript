@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Position absolute and relative</title>
+    <!--Another position attribute we can use 
+    1)Position absolute:
+  let create a div below our side bar and called it absolute then  we set some style with a position absolute with background color of red and font color white,when scroll up to the top of our page the position absolute alsway takes the same values s position fixed like the top left bottom and right including width and height but they behave a little differrent.first let set the left property to 0px now the left side of our element is 0px from the left side of our page just like the the position fixed and if we set to 10px it will 10px from the left side of the page and when we set the top to 10px our element is 10px from the top of the page.MOstly they work same as position fixed but with one key diffrence
+FOR POSITION FIXED THE ELEMENT ARE PKLACED IN THE BROWSER WINDOW WHILE FOR POSITION ABSOLUTE THE ELEMENTS ARE PLACED ON THE PAGE,this means that when we scroll the browser window which is the visible part is not moving only the page is moving up and down,so for position fixed we put the element on the browser window and it doesnt move ,so if we change the header to 10px at the top this will put the header 10px from the top of the browswer window not from the top of the page which is constantly moving.So for position absolute we re putting it on the page which scroll up and down
+SO POSITION FIXED POSITION THE ELEMENT ON THE BROWSER WINDOW WHICH DOEANT MOVE WHILE THE POSITION ABSOLUTE POSITION THE ELEMENT ON THE PAGE WHICH MOVE WHEN WE SCROLL
+
+so if we want to put the element in absolute position on the top right corner of our page we can just say top:10px and right:0px 
+SO if e notice the absolute eleemt is apprearing above our header this is cuz the absolute eleemnt is written in our code below our header which is fixed element.So generally an elemet that is written below is gonna appear in infront of the element that is written above it .SO WE CAN OVER RIDE THIS BY ADDING ANOTHER PROPERTY CALLED z-index
+z-index determine which eleemtn appear in front  and which elemet appear behinde.the default z-index is zero which is same as if u dont have the z-index in ya code,but eleemt with a higher z-index will appear in front of element with alower z-index  so if we set the z-index of the header to 1 it will appear in front of the absolute and if we set that of the absolute to 2 since that of the header is 1 the absolute will appear in front of it cuz is higher that the header
+Usually we set the z-index of the header to 100 incase our page has alot of layout
+Normally we dont usually use the  position absolute like dat cuz it not a common situation we run into when creating website however position absolute has another key features that makes it really useful, to demostrate
+let take the eleemnt aboslute and copy it with it style inside the sidebar element, so we re going to put a position absolute inside a position fixed (remember side bar is position fixed) so note this absolute elemet is not being placed on the page anymore it is placed inside the sidebar  so it placing the absolute elemet relative to the position fixed elemen(sidebar) so the absolute is right:10px of the aboslute is actually 10px from the right of the sidebar not the page and top:60px is 60px from the top of the side bar not the page.So whenebver position absolute is inside a position fixed element is going to be placed relative to the position fixed elment.SO that is the most important features of position absolute
+SO LET for instance we want a close button X on the right side of our sidebar  so we re able to close our side bar if we want so we postion the absolute element right:0 and top:0   so the leemnt X is in the top right this means the X is in position relative to the fixed position(sidebar)
+so that is how we attach eleemt to the corner and side of other element
+ so in our final project we can see we have the video tieme in the corner of the video preview(thumnail) and we have the notification count in the top right corner of the icon, so using position absolute it allows us to put element in the corner like dat
+
+SO WE NOTICE THAT WE HAVE A POSITION ABSOLUTE x INSIDE A POSTION FIXED (sidebar) so when we scroll the fixed position will overide the absolute postion s o we continue to see since it(stick to the page) inside a position fixed, but in pur final project the video time is not sticking to the page and we re stilla bal to put stuff in the corner so how do we achieve this .WE Gonna leran another value called the position relative
+Position Relative: so let set our div2 to position to relative  and save when we go back to our page nothing has rreally changed so that is how position relative work it still displace the element as normal except if we put positio abolsute inside the div2 it will popsition relative to div 2 instaed relative to the page. let copy the absolute element and paste it inside the div2   ans we save we will noticed that we have the same effect as when we put position absolute inside position fixed i.e it relative to the div2 which is postion relative,top:6px means 60px from the top of the div2 not from the page and right:10px is 10px from the top of div2 not from the page
+so when position absolute is inside a position relative the abolsute will be position relative to the position relative not the page
+and also position relative caused the div2 content to displace normally even when position absolute is wuthin it.so this happen in our final project we have the video time display normally even when it a position absolute 
+so our project thumnail is position relative while i  order to put something in the bottom right corner we use the position absolute
+SO let the absolute in the bottom right corner of the div2 just like the time count in our final project,so let change it to text to 12:45 and chnage the backgrounf color to black and put it on the bottom right corner i.e bottom:10px and right:10px
+SO that is how we position relative and if we scroll the page this act like normal content since it irelative position
+SINCE WE LEarnT the position abolute inside [position relative now let do that to create how video time and notification icon of our final project
+-->
+  </head>
+  <body style="
+  height: 3000px;
+  padding-top: 60px;
+  padding-left: 80px;">
+    <div style="
+      background-color: black;
+      color: white;
+      position: fixed;
+      top: 0px;
+      height: 50px;
+      left: 0px;
+      right: 0px;
+      z-index: 1;
+      ">header</div>
+      <div style="
+      background-color: green;
+      color: white;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      top: 50px;
+      width: 72px;">sidebar
+        <div style="
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        background-color: red;
+        color: white;
+        ">X</div>
+      </div>
+
+
+      <div style="
+      position: absolute;
+      right: 0px;
+      top: 60px;
+      background-color: red;
+      color: white;
+      ">absolute</div>
+
+
+    <div style="
+      background-color: lightblue;
+      width: 200px;
+      height: 200px;">div1</div>
+    <div style="
+      position: relative;
+      background-color: lightpink;
+      width: 200px;
+      height: 200px;">div2
+        <div style="
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        background-color:black;
+        color: white;
+        ">12:45</div></div>
+      
+      
+  </body>
+</html>
