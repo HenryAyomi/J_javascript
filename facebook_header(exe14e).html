@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Facebook Header</title>
+    <style>
+      body{
+        height: 3000px;
+      }
+      div,
+      p,
+      button{
+        font-family: Arial;
+        font-size:15px;
+      }
+      .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        vertical-align: top;
+        position: fixed;
+        top: 10;
+        right: 0;
+        left: 0;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 5px;
+        border-bottom-color: rgb(224, 217, 217);
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+
+
+      }
+      .right-side{
+        display: flex;
+        align-items: center;
+      }
+      .profile-pic{
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius:20px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .profile-name{
+        font-size: 20px;
+      }
+      .add-button,
+      .message-button{
+        background-color: blue;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        width: 100px;
+        cursor: pointer;
+
+      }
+      .message-button{
+        background-color: rgb(197, 191, 191);
+        color: black;
+        margin-right: 50px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="right-side">
+        <img class="profile-pic" src="thumbnail/profiledog2.jpg" alt="profile-pic">
+        <div class="profile-name">Oliver Dog</div>
+      </div>
+      <div class="left-side">
+        <button class="add-button"> Add Friend</button>
+        <button class="message-button">Message</button>
+      </div>
+    </div>
+  </body>
+</html>
