@@ -1,0 +1,115 @@
+  /*wrapping all the sidebar css inside a media query so that when the pag width is 1200px and below we have the belows style*/
+  @media(max-width:1200px){
+  .sidebar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top:55px;/*to whatever the height of our header is*/
+    background-color: white;/*we have our side bar*/
+    width: 72px;
+    z-index: 200;
+    padding-bottom: 5px;
+  }
+  .sidebar-link{
+    height: 74px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .sidebar-link:hover{
+    background-color:rgb(227, 223, 223);
+  }
+  .sidebar-link img{
+    height: 24px;
+    margin-bottom: 4px;
+  }
+  .sidebar-link div{
+    font-family: Roboto,Arial;
+    font-size:10px;
+  }
+  
+  }
+  /*wrapping all the sidebar css inside a media query so that when the page width is 1200.1px and above we have the belows style*/
+  @media(min-width: 1200.1px) {
+  body{
+    margin-left: 174px;/*cuz the width of the sidebar wjen at 1200.1px and above is increased  so the body margin to the left should also be inreased so that the sidebar wont cover the body at 1200.1px and above*/
+  }
+  .sidebar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top:55px;/*to whatever the height of our header is*/
+    background-color: white;/*we have our side bar*/
+    width: 240px;
+    z-index: 200;
+    padding-bottom: 5px;
+  }
+  .sidebar-link{
+    /*height: 74px;*/
+    display: flex;
+    align-items: center;
+    flex-direction: row;/*this is  by def*/
+    cursor: pointer;
+    padding: 8px 24px;
+  }
+  .sidebar-link:hover{
+    background-color:rgb(227, 223, 223);
+  }
+  .sidebar-link img{
+    height: 24px;
+    margin-bottom: 4px;
+    margin-right: 20px;
+  }
+  .sidebar-link div{
+    font-family: Roboto,Arial;
+    font-size:12px;
+  }
+  }    
+  .channel-pic-container{
+  display: inline-block;
+  position: relative;
+  
+  }
+  .creator-tip{
+  position: absolute;
+  display: flex;
+  width: 200px;
+  align-items: center;
+  border: none;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.15);
+  z-index: 300;
+  background-color: white;
+  opacity: 0;
+  pointer-events: none;
+  top: 45px;
+  }
+  .channel-pic-container:hover .creator-tip{
+  opacity: 1;
+  }
+  .profile-pic-tip{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin-right: 8px;
+  }
+  .creator-tip div{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Roboto,Arial;
+  }
+  .profile-name-tip{
+  font-weight: bold;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  }
+  .profile-stat-tip{
+  font-size: 15px;
+  color: gray;
+  }
