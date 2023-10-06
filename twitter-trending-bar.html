@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body{
+        font-family: Arial;
+      }
+      .search-bar-container{
+        background-color: rgba(214, 221, 223, 0.437);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid black;
+        width: 300px;
+        padding: 10px 5px;
+        border-radius: 25px;
+        border: none;
+      }
+      .search-bar-container img{
+        height: 25px;
+        width: 25px;
+        margin: 0px 0px 0px 10px;
+      }
+      .search-bar{
+        border: none;
+        margin: 0px 10px;
+        padding: 5px 10px;
+        outline: none;
+        background-color: transparent;
+      }
+      .search-bar::placeholder{
+        font-size: 15px;
+        color: black;
+      }
+      .subscribe-promotion{
+        background-color: rgba(214, 221, 223, 0.437);
+        width: 280px;
+        margin: 10px 0px;
+        padding: 15px;
+        border-radius: 20px;
+      }
+      .row-1{
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .row-2{
+        margin: 8px 0px;
+        line-height: 20px;
+      }
+      .row-3{
+        padding: 8px 13px;
+        font-size: 17px;
+        border: none;
+        border-radius: 18px;
+        color: white;
+        background-color: black;
+        font-weight: bold;
+      }
+      .trendlist{
+        background-color: rgba(214, 221, 223, 0.437);
+        width: 310px;
+        /*padding: 8px 10px;*/
+        border-radius: 20px;
+        overflow: hidden;
+      }
+      .header{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 5px 0px 10px 0px ;
+        padding: 15px 0px 0px 15px;
+      }
+      .trend{
+        /*width: 300px;*/
+        margin: 2px 0px 0px 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px 10px 15px; 
+        cursor: pointer;
+      }
+      .trend:hover{
+        /*width: 100%;
+        margin: 2px 0px 10px 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; 
+        padding: 5px 15px 15px 15px;*/
+        background-color: rgb(185, 208, 224);
+        transition: 0.4s;
+      }
+      .categories{
+        font-size: 15px;
+        color: gray;
+      }
+      .topic{
+        font-size: 15px;
+        margin: 5px 0px;
+        font-weight: bold;
+      }
+      .sub-row2 div{
+        font-weight: bold;
+        font-size: 20px;
+        margin: -25px 0px 0px 0px;
+        color: gray;
+      }
+      .topic-stat{
+        font-size: 15px;
+        color: gray;
+      }
+      .showmore{
+        color:rgb(29, 155, 240);
+        margin-bottom:5px 0px 0px 5px;
+        padding: 5px 15px 15px 15px;
+        cursor: pointer;
+      }
+      .showmore:hover{
+        background-color: rgb(185, 208, 224);
+        transition: 0.4s;
+      }
+      /*.main-container{
+        border: 1px solid black;
+        width: 310px;
+      }*/
+    </style>
+  </head>
+  <body>
+<div class="main-container">
+  <div class="search-bar-container">
+    <img src="thumbnail/icons/search.svg" alt="search bar">
+    <input class="search-bar" type="text" placeholder="Search">
+  </div>
+  <div class="subscribe-promotion">
+    <div class="row-1">Subcribe to Premium</div>
+    <div class="row-2">Subcribe to unlock new features and if eligibe,receive a share of ads revenue.</div>
+    <button class="row-3">Subscribe</button>
+  </div>
+  <div class="trendlist">
+    <div class="header">Trends for you</div>
+    <div class="trend">
+      <div class="sub-row1">
+        <div class="categories">Music.trending</div>
+        <div class="topic">Sexyy Red</div>
+        <div class="topic-stat">112K posts</div>
+      </div>
+      <div class="sub-row2">
+        <div>...</div>
+      </div>
+    </div>
+    <div class="trend">
+      <div class="sub-row1">
+        <div class="categories">Music.Trending</div>
+        <div class="topic">Naira and Sam Larry</div>
+        <div class="topic-stat">32K posts</div>
+      </div>
+      <div class="sub-row2">
+        <div>...</div>
+      </div>
+    </div>
+    <div class="trend">
+      <div class="sub-row1">
+        <div class="categories">Politics.Trending</div>
+        <div class="topic">Supreme Court</div>
+        <div class="topic-stat">132K posts</div>
+      </div>
+      <div class="sub-row2">
+        <div>...</div>
+      </div>
+    </div>
+    <div class="trend">
+      <div class="sub-row1">
+        <div class="categories">Trending in Nigeria</div>
+        <div class="topic">#Shameless</div>
+        <div class="topic-stat">9867 posts</div>
+      </div>
+      <div class="sub-row2">
+        <div>...</div>
+      </div>
+    </div>
+    <div class="trend">
+      <div class="sub-row1">
+        <div class="categories">Entertainment.Trending</div>
+        <div class="topic">Chioma</div>
+        <div class="topic-stat">6534 posts</div>
+      </div>
+      <div class="sub-row2">
+        <div>...</div>
+      </div>
+    </div>
+    <div class="trend">
+      <div class="sub-row1">
+        <div class="categories">Trending in Nigeria</div>
+        <div class="topic">VENITA ONE OF ONE</div>
+        <div class="topic-stat">17.5K posts</div>
+      </div>
+      <div class="sub-row2">
+        <div>...</div>
+      </div>
+    </div>
+    <div class="trend">
+      <div class="sub-row1">
+        <div class="categories">Entertainment.Trending</div>
+        <div class="topic">Saint Obi</div>
+        <div class="topic-stat">19.5K posts</div>
+      </div>
+      <div class="sub-row2">
+        <div>...</div>
+      </div>
+    </div>
+    <div class="trend">
+      <div class="sub-row1">
+        <div class="categories">Entertainment.Trending</div>
+        <div class="topic">ILEBAYE STAR OF ALL STARS</div>
+        <div class="topic-stat">8575 posts</div>
+      </div>
+      <div class="sub-row2">
+        <div>...</div>
+      </div>
+    </div>
+    <div class="trend">
+      <div class="sub-row1">
+        <div class="categories">Trending in Nigeria</div>
+        <div class="topic">Forgery</div>
+        <div class="topic-stat">69.5K posts</div>
+      </div>
+      <div class="sub-row2">
+        <div>...</div>
+      </div>
+    </div>
+    <div class="trend">
+      <div class="sub-row1">
+        <div class="categories">Music.Trending</div>
+        <div class="topic">World Wizkid Day</div>
+        <div class="topic-stat">21.6K posts</div>
+      </div>
+      <div class="sub-row2">
+        <div>...</div>
+      </div>
+    </div>
+    <div class="showmore">Show more</div>
+  </div>
+</div>
+  </body>
+</html>
