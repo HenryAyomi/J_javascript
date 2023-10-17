@@ -1,0 +1,34 @@
+.left-sidebar-menu{
+  position: fixed;
+}
+.left-sidebar-content{
+  font-size: 20px;
+  font-weight: 500;
+  color: #0F1419;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px 12px 10px;
+  background-color: transparent;
+  border: none;
+  
+}
+.left-sidebar-content:hover{
+  background-color: rgb(0,0,0,0.1);/*10% of the color*/
+  color:#0F1419;
+  border-radius: 25px;
+  cursor: pointer;
+
+}
+.active{
+  font-weight: 700;
+}
+.left-sidebar-icon{
+  width: 26px;
+  height: 26px;
+  margin-right: 20px;
+}
+/*since we have our icon inside left-sidebar-content we can say active.left-sidebar-icon cuz we want to style the child element only when the left-sidebar-content is active*/
+.active .left-sidebar-icon{
+  /*filter: invert(74%) sepia(38%) saturate(2198%) hue-rotate(176deg) brightness(96%) contrast(100%);*/
+  font-weight: 700;
+}
