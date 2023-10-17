@@ -1,0 +1,40 @@
+.trend-for-you-container{
+  border-radius: 15px;
+  background-color: #f5f8fa;
+  margin: 15px 0px;
+  
+
+}
+.trend-for-you{
+  border-bottom: 1px solid #e6ecfe;
+  padding: 10px 15px;
+
+}
+.trend-for-you:last-child{/*this will affect only the last div inside the trend-for-you container*/
+  border-bottom: none;
+}
+.trend-for-you-heading{
+  font-size: 19px;
+  font-weight: bold;
+  color: #14171c;
+
+}
+.trend-category{
+  font-size: 13px;
+  font-weight: 300;
+  color: #657786;
+
+}
+.trend-topic{
+  font-size: 15px;
+  font-weight: bold;
+  color: #14171d;
+  margin: 2px 0px 5px 0px;
+
+}
+.trend-count{
+  font-size: 13px;
+  font-weight: 300;
+  color: #657786;
+
+}
