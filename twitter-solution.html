@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="twitter-solu.css">
+    <link rel="stylesheet" href="brand.css">
+    <link rel="stylesheet" href="sidebar-menu.css">
+    <link rel="stylesheet" href="tweet-card.css">
+    <link rel="stylesheet" href="right-sidebar.css">
+    <link rel="stylesheet" href="twitter-trending-block.css">
+    <link rel="stylesheet" href="who-to-follow.css">
+  </head>
+  <body>
+    <!--remember grid doesnt support position fixed so for u do use the position fixed u have to put it inside a div that is the element u want to fixed should be a grandchild to the element that is display grid
+    1)check font-sixe in computed of the developer tab
+    2)we want the element when active to have diffrent style we can do this by (since for this project only the home icon container is active so use the home icon) change the icon color also using filter if need becuz it an svg
+  3)rgba here the value of a which can range from 0.0 to 1.0 is % of the color i.e 0,1 means 10% of the color-->
+    <div class="layout">
+      <div class="left-sidebar">
+        <img src="svg-folder/twitter-logo.svg" class="brand" alt="">
+        <div class="left-sidebar-menu">
+          <!--so we the sctive styling by adding another class active to it so it will be 'left-sidebar-content active' so it --active is our modifier-->
+          <button class="left-sidebar-content active">
+            <img class="left-sidebar-icon" src="svg-folder/home-icon.svg" alt="home-icon">
+            Home
+          </button>
+          <button class="left-sidebar-content">
+            <img class="left-sidebar-icon" src="svg-folder/search-icon.svg" alt="explore-icon">
+            Explore
+          </button>
+          <button class="left-sidebar-content">
+            <img class="left-sidebar-icon" src="svg-folder/notification-icon.svg" alt="notification-icon">
+            Notifications
+          </button>
+          <button class="left-sidebar-content">
+            <img class="left-sidebar-icon" src="svg-folder/messages-icon.svg" alt="messages-icon">
+            Messages
+          </button>
+          <button class="left-sidebar-content">
+            <img class="left-sidebar-icon" src="svg-folder/list-icon.svg" alt="lists-icon">
+            Lists
+          </button>
+          <button class="left-sidebar-content">
+            <img class="left-sidebar-icon" src="svg-folder/communities-icon.svg" alt="communities-icon">
+            Communities
+          </button>
+          <button class="left-sidebar-content">
+            <img class="left-sidebar-icon" src="svg-folder/twitter-logo.svg" alt="premium-icon">
+            Premium
+          </button>
+          <button class="left-sidebar-content">
+            <img class="left-sidebar-icon" src="svg-folder/profile-icon.svg" alt="profile-icon">
+            Profile
+          </button>
+          <button class="left-sidebar-content">
+            <img class="left-sidebar-icon" src="svg-folder/more-icon.svg" alt="more-icon">
+            More
+          </button>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="tweet-card">
+          <img class="author-profile-pic" src="profile-pic/profiledog.jpg" alt="profile-pic">
+          <div class="main-tweet">
+            <div class="main-tweet-header">
+              <div class="author-name">Adewale</div>
+              <img class="verify-icon" src="svg-folder/verify-icon.svg" alt="verify-icon">
+              <div class="author-handle">@adeblay</div>
+              <div class="dot">.</div>
+              <div class="time-published">13h</div>
+            </div>
+            <div class="tweet-content">
+              Jesus Is Lord
+            </div>
+          </div>
+        </div>
+
+        <div class="tweet-card">
+          <img class="author-profile-pic" src="profile-pic/profiledog.jpg" alt="profile-pic">
+          <div class="main-tweet">
+            <div class="main-tweet-header">
+              <div class="author-name">John</div>
+              <img class="verify-icon" src="svg-folder/verify-icon.svg" alt="verify-icon">
+              <div class="author-handle">@johnnie</div>
+              <div class="dot">.</div>
+              <div class="time-published">5d</div>
+            </div>
+            <div class="tweet-content">
+              500k GIVEAWAY STILL PENDING.
+
+              DROP UR OPAY, KUDA, PALMPAY ACCOUNT DETAILS 💰👌
+
+              .. Wednesday Mass Crediting 🖤💰
+
+              ✅Follow me first.
+              ✅Follow 
+              @Timmyofdelta
+              ...
+              .....
+
+              Wizkid / Davido
+              <a href="https://twitter.com/OfficialJoel4_/status/1712000080964661447" target="_blank">Show more</a>
+              <img class="posted-image" src="post-image/thumbnail-5.webp" alt="">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="tweet-card">
+          <img class="author-profile-pic" src="profile-pic/profiledog.jpg" alt="profile-pic">
+          <div class="main-tweet">
+            <div class="main-tweet-header">
+              <div class="author-name">David</div>
+              <img class="verify-icon" src="svg-folder/verify-icon.svg" alt="verify-icon">
+              <div class="author-handle">@dave-dah</div>
+              <div class="dot">.</div>
+              <div class="time-published">19h</div>
+            </div>
+            <div class="tweet-content">
+              one option is the div  wuth class right-section another better option is to wrap the image icon element inside a div.S o we create a div and put the image icon inside it sice is just goiging to create a box around the image and not changing the apperance of the image.SO we can now make the newky created div position relative so we can achieve what we want. SO Let give the div a class and called it notification-icon-container
+              so inside we have div for our notification count with class notifcations-count.we have the imae icon adn the notifucation count div inside a div with class notification-icon-container.Now let style them with notification_icon_contianer being position relative and notification_counts being position absolute
+              so now let put it in the top right corner with the top:0px, right:0px and a background_color of red with text colour of white
+              so ater adding padding and doing other styling we notice our notification counts is still a bit lower to ourfinal project even when top:0 so how can we go even higher?
+              the trick is that we use NEGATIVE NUMBER on the top whch will make it position beyond the top each od our conatiner so set it top:-2px the right:-5px so it makes it 5px beyond the tp eadge of our container
+              Jesus Is Lord
+              <a href="https://twitter.com/DailyLoud/status/1711934568071155787" target="_blank">Show more</a> 
+              <img class="posted-image" src="post-image/thumbnail-4.webp" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div>
+        <div class="right-sidebar">
+          <div class="search-container">
+            <img class="search_icon" src="svg-folder/search-icon.svg" alt="search-icon">
+            <input type="text" placeholder="Search">
+          </div>
+          <div class="promo-container">
+            <p>Relevant people</p>
+            <div class="account-container">
+              <img class="author-profile-pic-sub" src="profile-pic/profilecat2.jpg" alt="profile-picture">
+              <div class="profile-info">
+                <div class="profile-info-sub">
+                  <div class="author-name">Daily Loud</div>
+                  <div class="author-handle-second">@Dailyloud</div>
+                </div>
+                <button class="follow-button">Follow</button>
+                <div class="break"></div>
+                <div class="fav-hash-tag">#1 Source For Hip-Hop/Viral News</div>
+              </div>
+              
+
+            </div>
+          </div>
+          <div class="trend-for-you-container">
+            <div class="trend-for-you">
+              <div class="trend-for-you-heading">
+                Trends for you
+              </div>
+            </div>
+            <div class="trend-for-you">
+              <div class="trend-category">
+                Music.trending
+              </div>
+              <div class="trend-topic">
+                Sexyy Red
+              </div>
+              <div class="trend-count">
+                324K posts
+              </div>
+            </div>
+            <div class="trend-for-you">
+              <div class="trend-category">
+                Music.trending
+              </div>
+              <div class="trend-topic">
+                Sam Lerry
+              </div>
+              <div class="trend-count">
+                219K posts
+              </div>
+            </div>
+            <div class="trend-for-you">
+              <div class="trend-category">
+                Music.PoliticS
+              </div>
+              <div class="trend-topic">
+                Supreme Court
+              </div>
+              <div class="trend-count">
+                865K posts
+              </div>
+            </div>
+          </div>
+          <div class="who-to-follow-container">
+            <div class="who-to-follow-block">
+              <div class="who-to-follow-heading">
+                Who to follow
+              </div>
+          </div>
+          <div class="who-to-follow-block">
+            <img class="who-to-follow-profile-pic" src="profile-pic/profiledog.jpg" alt="image">
+            <div class="who-to-follow-info">
+              <div>
+                <div class="who-to-follow-name">
+                  Basit
+                </div>
+                <div class="who-to-follow-handle">
+                  @basito
+                </div>
+              </div>
+              <div class="who-to-follow-button">
+                Follow
+              </div>
+            </div>
+          </div>
+          <div class="who-to-follow-block">
+            <img class="who-to-follow-profile-pic" src="profile-pic/dog.jpeg" alt="image">
+            <div class="who-to-follow-info">
+              <div>
+                <div class="who-to-follow-name">
+                  Aanu
+                </div>
+                <div class="who-to-follow-handle">
+                  @mercy
+                </div>
+              </div>
+              <div class="who-to-follow-button">
+                Follow
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>
