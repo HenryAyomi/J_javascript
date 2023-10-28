@@ -1,0 +1,179 @@
+.right-sidebar{
+  position: fixed;
+  padding: 0px 0px 0px 10px;
+  height: 100%;
+  overflow-y: auto;
+  /*border: 1px solid red;*/
+  z-index: 20;
+  top: 0;
+}
+.right-sidebar::-webkit-scrollbar{
+  width: 0;
+}
+
+.sponsored-block{
+  /*border: 1px solid yellow;*/
+  margin-top: 78px;
+
+}
+.sponsored{
+  font-size: 17px;
+  font-weight: 700;
+  color: #65676B;
+  margin-bottom: 12px;
+
+
+}
+.ad-container{
+  display: flex;
+  align-items: center;
+  margin: 5px 0px 10px 0px;
+
+
+}
+.ad-image{
+  width: 112px;
+  height: 112px;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+.ad-info-container{
+  padding: 20px 10px;
+  white-space: normal;
+  width: 150px;
+
+}
+.ad-info{
+  font-size: 15px;
+  font-weight: 700;
+
+
+}
+.ad-handle{
+  font-size: 13px;
+  color: #65676B;
+  margin-top: 5px;
+
+}
+.contact-container{
+  padding:10px 0px 10px 0px;
+  border-top: 1px solid #65676B;
+  border-bottom: 1px solid #65676B;
+
+}
+.contact-block{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 0px;
+}
+.contact{
+  font-size: 17px;
+  font-weight: 700;
+  color: #65676B;
+}
+.contact-icon-container{
+  display: flex;
+  align-items: center;
+
+}
+.search--container,
+.menu--container{
+  padding: 7px 1px 7px 7px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
+  margin-top: -3px;
+}
+.menu--container{
+  padding: 5px;
+  margin-top: -3px;
+}
+.search--container:hover{
+  background-color:#D8DADF;
+  cursor: pointer;
+}
+.menu--container:hover{
+  background-color: #D8DADF;
+  cursor: pointer;
+}
+.search-contact-icon,
+.menu-contact-icon{
+  width: 15px;
+  height: 15px;
+  object-fit: cover;
+  opacity: 0.7;
+}
+.search-contact-icon{
+  margin-right: 7px;
+}
+.menu-contact-icon{
+  width: 18px;
+  height: 18px;
+  
+}
+.contact-pic-name-container{
+display: flex;
+align-items: center;
+margin: 5px 0px -4px 0px;
+padding: 5px;
+border-radius: 10px;
+}
+.contact-pic-name-container:hover{
+background-color: #D8DADF;
+cursor: pointer;
+}
+.contact-picture{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.contact-name{
+  font-size: 15px;
+  font-weight: 600;
+  color: #070808;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.group-container{
+  margin-top: 15px;
+}
+.group-info{
+  font-size: 17px;
+  font-weight: 700;
+  color: #65676B;
+}
+.create-new-group-container{
+  display:flex;
+  align-items: center;
+  margin-top:10px;
+  padding: 7px 5px;
+  border-radius: 10px;
+}
+.create-new-group-container:hover{
+  background-color: #D8DADF;
+  cursor: pointer;
+}
+.plus-icon-container{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color:#cfd0d4;
+  text-align: center;
+  margin-right: 10px;
+}
+.plus-icon{
+  font-size: 20px;
+  color:#070808;
+  margin: 1.8px;
+}
+.icon-description{
+  font-size: 14px;
+  font-weight:bold;
+  color:#070808;
+}
