@@ -1,0 +1,140 @@
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: white;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:3px 5px;
+}
+.header-left-section{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.facebook-logo{
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+}
+.facebook-logo:hover{
+  cursor: pointer;
+}
+.search-bar-container{
+  display: flex;
+  align-items: center;
+  background-color: #F0F2F5;
+  margin: 0px 5px;
+  padding: 7px 10px;
+  border-radius: 20px;
+
+}
+.header-search-icon{
+  width: 18px;
+  height: 18px;
+  opacity: 0.6;/* filter should be use to chage the color of the svg*/
+}
+.header-search-bar{
+  background-color: transparent;
+  padding: 5px 4px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+}
+.header-search-bar::placeholder{
+  font-size: 15px;
+}
+
+
+.header-middle-section{
+  display: flex;
+  align-items: center;
+  padding: 3px ;
+  margin-right: 90px;
+}
+.middle-section-icon-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 45px;
+  border-radius: 10px;
+  margin: 1px;
+}
+.middle-section-icon-container:hover{
+  background-color: #F0F2F5;
+  cursor: pointer;
+  transition: 0.4s;
+  position: relative;
+}
+.header-iconss-active{
+  width: 23px;
+  height: 23px;
+  filter:invert(28%) sepia(77%) saturate(3576%) hue-rotate(212deg) brightness(98%) contrast(108%);
+}
+.header-iconss{
+  width: 23px;
+  height: 23px;
+}
+.tool-tip{
+  padding: 10px 12px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  font-size: 12px;
+  border-radius:7px;
+  border: none;
+  bottom: -32px;
+  box-shadow: 3px 3px 8px rgba(0,0,0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+}
+.middle-section-icon-container:hover .tool-tip{
+  opacity: 1;
+  transition: 0.4s;
+}
+.header-right-section{
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+.right-section-icon-container{
+  padding: 10px;
+  background-color:#F0F2F5;
+  margin: 0px 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.right-section-icon-container:hover{
+  padding: 10px;
+  background-color: #D8DADF;
+  margin: 0px 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+.right-section-icon{
+  width: 20px;
+  height: 20px;
+}
+.right-section-icon-container:hover .tool-tip{
+  opacity: 1;
+}
+.profile-picture-container{
+  position: relative;
+}
+.profile-picture-container:hover{
+  cursor: pointer;
+}
+.profile-picture-container:hover .tool-tip{
+  opacity: 1;
+}
