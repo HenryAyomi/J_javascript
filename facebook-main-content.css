@@ -1,0 +1,369 @@
+.main{
+  margin: 0 auto;
+  /*border: 1px solid red;*/
+}
+
+.main-content{
+  padding:0px 110px;
+  /*border: 1px solid green;*/
+}
+.first-row-block{
+  background-color:white;
+  margin:0 auto;
+  border-radius: 10px;
+  /*border: 1px solid blue;*/
+}
+.story-reel{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #E5E5E5;
+  padding: 5px;
+
+}
+.story-container{
+  display: flex;
+  align-items: center;
+  padding: 15px 77px;
+  background-color:transparent;
+  margin: 0px 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+.story-container:hover{
+background-color: #D8DADF;
+transition: 0.2s;
+cursor: pointer;
+}
+.image-reel{
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+  margin: 0px 8px;
+  filter: invert(26%) sepia(76%) saturate(4129%) hue-rotate(214deg) brightness(102%) contrast(100%);
+}
+.text{
+  font-size: 15px;
+  font-weight: 700;
+  color: #0866FF;
+}
+.reel-posts{
+  display: flex;
+  align-items: center;
+  padding: 5px ;
+}
+.add-story-container{
+  background-color:white;
+  position: absolute;
+  width:112px;
+  height:60px ;
+  bottom:9.5px ;
+  left: 5px;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+  box-shadow:2px 2px 5px rgba(0,0,0,0.15);
+
+}
+.add-story-icon-container{
+  position: absolute;
+  /*border: 4px solid white;*/
+  border-radius: 50%;
+  left: 35px;
+  bottom: 40px;
+}
+.add-story-icon{
+  height: 20px;
+  width:20px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color:#075CE5;
+  margin-bottom: -6px;
+  /*filter: invert(100%) sepia(0%) saturate(3858%) hue-rotate(104deg) brightness(125%) contrast(80%);*/
+
+
+}
+.add-story-info{
+  color: black;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.hash-tag{
+  color: #0866FF;
+}
+.post-image-container{
+  position: relative;
+  padding: 5px 0px;
+}
+.post-image{
+  width: 112px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0px 5px;
+}
+.reel-poster-image-container{
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  /*border: 5px solid blue;*/
+  border-radius: 50%;
+}
+.reel-poster-image{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-bottom: -4px;
+}
+.reel-poster-name{
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  font-weight: 700;
+  font-size: 13px;
+  color: white;
+}
+.second-row-block{
+  margin: 10px 0px 10px 0px;
+  background-color: #FFFFFF;
+  padding: 5px 10px;
+  border-radius: 10px;
+  /*border: 1px solid red;*/
+}
+.profile-pic-and-search-block{
+  display: flex;
+  align-items: center;
+  padding: 5px 5px 10px 5px;
+  
+
+  
+}
+.profile-picture{
+  height: 45px;
+  width:45px;
+  border-radius: 50%;
+  border: none;
+  object-fit: cover;
+}
+.search-bar{
+  width: 90%;
+  padding: 12px 10px 12px 10px;
+  border: none;
+  background-color: #E4E6E9;
+  border-radius: 20px;
+  margin: 0px 5px;
+  outline: none;
+  color: black;
+  font-size: 15px;
+}
+.search-bar::placeholder{
+  font-size: 15px;
+  color: #7A7C80;
+  font-weight: 500;
+}
+.post-icon-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px 15px 25px;
+  border-top: 1.5px solid #E4E6E9;
+
+}
+.icon-text-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.post-icon{
+  height: 24px;
+  width: 24px;
+  object-fit: cover;
+
+}
+.icon-text{
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0px 5px;
+  color: #65676B;
+
+}
+
+.third-row-block{
+  background-color:#FFFFFF;
+  /*border: 1px solid blue;*/
+  margin: 5px 0px 5px 0px;
+  padding: 5px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+.poster-info-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0px;
+
+}
+.info-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 0px;
+  margin: 0px 5px;
+  position: relative;
+}
+.poster-name{
+  font-size: 15px;
+  font-weight: 700;
+
+}
+.post-status{
+  font-size: 12px;
+  font-weight: 550;
+  color: #65676B;
+  margin: 5px 0px;
+
+}
+.verify--icon{
+  position: absolute;
+  top: 7px;
+  left:85px;
+  width: 13px;
+  color: blue;/*using filter here*/
+
+
+}
+.dot{
+  position: absolute;
+  color:#65676B;
+  bottom: 12px;
+  left: 64px;
+  font-weight: 700;
+}
+.globe-icon{
+  position: absolute;
+  width: 13px;
+  left:70px;
+  bottom: 11px;
+  color: blue;/* filter color*/
+}
+.menu-x-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.icon-style1{
+  width: 20px;
+  height: 20px;
+  margin:0px 15px 0px 10px ;
+}
+.icon-style2{
+  width: 20px;
+  height: 20px;
+}
+.post-text{
+  font-size: 15px;
+  font-weight: 600px;
+  margin: 0px 0px 10px 0px;
+}
+.post--image{
+  height: 500px;
+  width: 523px;
+  margin: -6px 0px 5px 0px;
+}
+.fourth-row-block{
+  /*border: 1px solid blue;*/
+  margin: -10px 0px 0px 0px;
+  padding: 5px 10px 3px 10px;
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+.fourth-row-icons-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0px 7px 0px;
+  border-bottom: 1px solid #65676B;;
+}
+.thumps-like-container{
+  display: flex;
+  align-items: center;
+
+}
+.thumps-up{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: -3px;
+  z-index: 2;
+
+}
+.like-icon{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+.comment-share-container{
+  display: flex;
+  align-items: center;
+
+}
+.comment-icon-container,
+.share-icon-container{
+  display: flex;
+  align-items: center;
+  
+}
+.comment-icon-container{
+  margin: 0px 10px;
+}
+.comment-icon{
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  object-position: 0px -438px;
+}
+.comment-share-stat{
+  font-size: 15px;
+  color: #696B6F;
+  margin-right: 3px;
+}
+.share-icon{
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  object-position: 0px -843px;
+}
+.fourth-row-icons-container2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+.icons--icon-container{
+  display: flex;
+  align-items: center;
+}
+.icons--icon{
+  width: 22px;
+  height: 22px;
+  object-fit: cover;
+}
+.icons--iconn{
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+
+}
+.icons--info{
+  font-size: 15px;
+  color: #606770;
+  font-weight: 700;
+  margin-left: 7px;
+}
