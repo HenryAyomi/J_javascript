@@ -1,0 +1,28 @@
+body{
+  font-family: Arial;
+  background-color: #F0F2F5;
+  margin:0 auto;
+  padding-bottom: 3000px;
+  padding-top: 80px;
+  min-width: 800px;
+
+}
+.layout{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 744px auto;
+  
+
+}
+@media(max-width:835px){
+  .right-sidebar{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
